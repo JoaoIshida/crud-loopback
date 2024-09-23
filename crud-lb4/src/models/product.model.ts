@@ -27,6 +27,12 @@ export class Product extends Entity {
   })
   description?: string;
 
+  @property({
+    type: 'string',
+    default: 'n/a',
+  })
+  category?: string;
+
   // Define well-known properties here
 
   // Indexer property to allow additional data
